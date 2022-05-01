@@ -82,8 +82,6 @@ class _HomeState extends State<Home> {
     );
   }
 }
-
-
 Future<Album> deleteAlbum(String id)async{
   final response = await http.delete(
     Uri.parse("https://jsonplaceholder.typicode.com/albums/1"),
@@ -98,8 +96,6 @@ Future<Album> deleteAlbum(String id)async{
     throw Exception('Failed to delete');
   }
 }
-
-
 Future<Album> fetchAlbum()async{
   final response = await http.get(
     Uri.parse("https://jsonplaceholder.typicode.com/albums/1")
